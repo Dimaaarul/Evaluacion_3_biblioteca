@@ -33,9 +33,13 @@ function App() {
     return coincideEstado && coincideTexto;
   });
 
+  const novedades = librosFiltrados.filter((libro) => libro.esNovedad).length;
+
   return (
     <main style={{ padding: '20px' }}>
       <h1>Biblioteca</h1>
+
+      <p>Novedades encontradas: {novedades}</p>
 
       <input
         type="text"
