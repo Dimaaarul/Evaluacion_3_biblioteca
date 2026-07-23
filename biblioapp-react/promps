@@ -1,0 +1,5 @@
+etapa 1:crea src/components/LibroCard.jsx, y luego crea un componente react que reciba por props, titulo, editorial, anio, estado, resumen, autores, esNovedad. Usa ProTypes, si esNovedad es true, muestra un texto "NUEVO". Usa estilos en linea a clases para que si el estado es "Disponible" sea verde, "Prestado" rojo y "Reservado" amarillo. No uses dangeroslySetinnetHTML
+etapa 2:crea un componente ListaLibros que reciba un array de libros. Usa .map() para mostrar un par cada uno. Pasa todas las propiedades del libro y usa el id como key
+etapa 3:crea botones para filtrar por Todos, Disponibles, Prestados y Reservado
+etapa 4:En app.jsx, crea un estado para el texto de busqueda y otro para el filtro de estado, crea un variable "LibrosFiltrados" que aplique ambos filtros al array original. Normaliza el texto de busqueda (trim y lowercase)
+etapa 5en app.jsx añade: const novedades = LibrosFiltrados.filter(l =<l.esNovedades).length; y muestralo en el html <p>Novedades encontradas:{novedades}</p>
